@@ -41,7 +41,8 @@ class ReminderListFragment : BaseFragment() {
 
         //uncomment when you want to delete the database
         //binding.viewModel!!.deleteAllData()
-        observeAuthenticationState()
+        //todo this lines makes authentication mandatory
+        //observeAuthenticationState()
 
         binding.refreshLayout.setOnRefreshListener { _viewModel.loadReminders() }
 
